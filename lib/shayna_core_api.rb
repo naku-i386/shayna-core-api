@@ -1,0 +1,2 @@
+module ShaynaCoreApi
+end

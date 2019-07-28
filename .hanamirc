@@ -1,0 +1,3 @@
+project=shayna_core_api
+test=rspec
+template=erb
