@@ -18,10 +18,11 @@ module Api
       #
       # When you add new directories, remember to add them here.
       #
+      # Add views folder to array if you want to render html
       load_paths << [
         'controllers',
-        'views'
       ]
+
 
       # Handle exceptions with HTTP statuses (true) or don't catch them (false).
       # Defaults to true.
@@ -103,11 +104,11 @@ module Api
 
       # The layout to be used by all views
       #
-      layout :application # It will load Api::Views::ApplicationLayout
+      # layout :application # It will load Api::Views::ApplicationLayout
 
       # The relative path to templates
       #
-      templates 'templates'
+      # templates 'templates'
 
       ##
       # ASSETS

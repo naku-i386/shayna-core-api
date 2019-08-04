@@ -14,12 +14,12 @@ group :development do
 end
 
 group :test, :development do
+  gem 'pry', '~> 0.12.2'
   gem 'dotenv', '~> 2.4'
 end
 
 group :test do
   gem 'rspec'
-  gem 'capybara'
 end
 
 group :production do

@@ -1,7 +1,12 @@
 require 'bundler/setup'
 require 'hanami/setup'
 require 'hanami/model'
-require_relative '../lib/shayna_core_api'
+
+# Require core, entities and repositories
+# require_relative '../core/users'
+# require_relative '../'
+
+# Require apps
 require_relative '../apps/api/application'
 
 Hanami.configure do
@@ -28,7 +33,7 @@ Hanami.configure do
   end
 
   mailer do
-    root 'lib/shayna_core_api/mailers'
+    # root 'core/mailers/mailers'
 
     # See https://guides.hanamirb.org/mailers/delivery
     delivery :test
