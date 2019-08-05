@@ -23,7 +23,6 @@ module Api
         'controllers',
       ]
 
-
       # Handle exceptions with HTTP statuses (true) or don't catch them (false).
       # Defaults to true.
       # See: http://www.rubydoc.info/gems/hanami-controller/#Exceptions_management
@@ -144,7 +143,7 @@ module Api
         # Specify sources for assets
         #
         sources << [
-          'assets'
+          'assets',
         ]
       end
 
@@ -221,7 +220,7 @@ module Api
       #
       #  * https://developer.mozilla.org/en-US/docs/Web/Security/CSP/CSP_policy_directives
       #
-      security.content_security_policy %{
+      security.content_security_policy %(
         form-action 'self';
         frame-ancestors 'self';
         base-uri 'self';
@@ -236,7 +235,7 @@ module Api
         child-src 'self';
         frame-src 'self';
         media-src 'self'
-      }
+      )
 
       ##
       # FRAMEWORKS

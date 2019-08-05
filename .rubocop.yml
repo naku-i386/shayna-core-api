@@ -1,0 +1,138 @@
+require: rubocop-rspec
+
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 2.6.1
+  Exclude:
+    - "db/*"
+    - "vendor/**/*"
+
+Documentation:
+  Enabled: false
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/Next:
+  Enabled: false
+
+Style/BlockComments:
+  Enabled: false
+
+Layout/EmptyLineBetweenDefs:
+  AllowAdjacentOneLineDefs: true
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Layout/SpaceInLambdaLiteral:
+  EnforcedStyle: require_space
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Style/BracesAroundHashParameters:
+  EnforcedStyle: context_dependent
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/EmptyMethod:
+  Enabled: false
+
+Style/SingleLineBlockParams:
+  Enabled: false
+
+Style/ParallelAssignment:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Style/SafeNavigation:
+  Enabled: false
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Naming/BinaryOperatorParameterName:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 25
+
+Metrics/BlockLength:
+  Max: 40
+  Exclude:
+    - spec/**/*
+
+Metrics/LineLength:
+  Max: 100
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/*.rb
+
+Metrics/ClassLength:
+  Max: 150
+
+Metrics/ModuleLength:
+  Max: 150
+
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "spec/**/*"
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    "%i": "()"
+    "%w": "()"
+    "%W": "()"
+
+RSpec/NestedGroups:
+  Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/MessageSpies:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/EmptyLineAfterHook:
+  Enabled: true
+
+RSpec/EmptyLineAfterExampleGroup:
+  Enabled: true
+
+RSpec/VerifiedDoubles:
+  Enabled: false
