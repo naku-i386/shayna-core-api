@@ -114,7 +114,7 @@ GEM
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    rack (2.0.7)
+    rack (2.2.3)
     rake (12.3.3)
     rom (3.3.3)
       concurrent-ruby (~> 1.0)
